@@ -1,29 +1,21 @@
 import { StyleSheet } from "react-native"
+import { color } from "react-native/Libraries/Components/View/ReactNativeStyleAttributes";
 
 const styles = StyleSheet.create({
     scrollView: {
-        //padding: 15,
-        backgroundColor: 'green',
+        padding: 10,
+        backgroundColor: 'darkgrey',
         flex:1,
-        //flexDirection: "column",
     },
-    /*parentView: {
-        padding: 15,
-        backgroundColor: 'red',
-        flex:1,
-        flexDirection: "column",
-        justifyContent: "space-around",
-        alignItems: 'center'
-    },*/
     noteView: {
-        backgroundColor: 'red',
-        flex: 3
-        //justifyContent: "flex-end",
-    },
-    buttonView: {
-        backgroundColor: 'blue',
-        flex: 5
-    }    
+        minHeight: 200,
+        backgroundColor: 'azure',
+        marginBottom: 20,
+        padding: 20,
+        flexDirection: 'column-reverse',
+        alignItems: 'center',
+        justifyContent: "space-around"
+    }
 
 });
 

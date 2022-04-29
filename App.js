@@ -101,7 +101,7 @@ class NoteList extends React.Component {
             id={note.id}
             />)}
         </View>  
-        <Button title="siirry" 
+        <Button title="change screen"
           onPress={() => this.props.navigation.navigate(
             'Add note', {
               newNote: this.state.newNote, 
@@ -118,14 +118,14 @@ class NoteList extends React.Component {
 class NoteInputScreen extends React.Component {
   render() {
     return (
-      <View style={styles.noteInputView}>
+      <View>
         <TextInput 
           placeholder="Write the note here" 
           onChangeText={this.props.route.params.handleNewNote}
           onSubmitEditing={this.props.route.params.onSubmitEdit}
           //value={this.props.route.params.newNote}
         />
-        <Button style={styles.button} title="ADD NOTE" 
+        <Button title="add note" 
           onPress={this.props.route.params.onSubmitEdit}/>
       </View>
     )
